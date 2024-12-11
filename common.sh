@@ -39,6 +39,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-filters
     --enable-filter=aformat
     --enable-filter=anull
+    --enable-filter=aresample
     --enable-filter=atrim
     --enable-filter=format
     --enable-filter=null

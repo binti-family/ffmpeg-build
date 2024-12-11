@@ -28,7 +28,7 @@ jobs:
           path: artifacts/
 
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs:
       - package-linux
     steps:
