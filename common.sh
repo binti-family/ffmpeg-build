@@ -96,8 +96,8 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=xwma
     --enable-demuxer=dsf
 
-    --enable-muxer=wav
-    --enable-encoder=pcm_s16le
+    --enable-muxer=mp3
+    --enable-encoder=libmp3lame
 
     --enable-decoder=aac
     --enable-decoder=aac_latm
