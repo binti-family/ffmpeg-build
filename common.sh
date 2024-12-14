@@ -5,6 +5,7 @@ FFMPEG_TARBALL=ffmpeg-$FFMPEG_VERSION.tar.gz
 FFMPEG_TARBALL_URL=https://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
+    --logfile=/tmp/ffmpeg.log
     --disable-shared
     --enable-static
     --enable-pic
@@ -97,6 +98,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=dsf
 
     --enable-muxer=mp3
+    --enable-libmp3lame
     --enable-encoder=libmp3lame
 
     --enable-decoder=aac
@@ -167,7 +169,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=pcm_u24le
     --enable-decoder=pcm_u32be
     --enable-decoder=pcm_u32le
-    --enable-decoder=pcm_zork
     --enable-decoder=dsd_lsbf
     --enable-decoder=dsd_msbf
     --enable-decoder=dsd_lsbf_planar
