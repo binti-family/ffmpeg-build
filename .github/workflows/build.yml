@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update -y && \
-          sudo apt-get install -y yasm libavcodec-extra-58
+          sudo apt-get install -y yasm libavcodec-extra
       - name: Build
         run: ./build-linux.sh
       - name: Archive production artifacts
