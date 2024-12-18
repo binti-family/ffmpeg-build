@@ -19,6 +19,9 @@ jobs:
         run: |
           sudo apt-get update -y && \
           sudo apt-get install -y yasm libmp3lame-dev
+      - name: Delete libmp3lame-dev shared libraries
+        run: |
+          sudo rm -f /usr/lib/x86_64-linux-gnu/libmp3lame.so*
       - name: Build
         run: ./build-linux.sh
       - name: Archive production artifacts
